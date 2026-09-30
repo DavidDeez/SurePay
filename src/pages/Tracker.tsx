@@ -163,7 +163,7 @@ const Tracker = () => {
               <FileText className="h-5 w-5" />
               View Evidence
             </button>
-            <button className="py-3 flex items-center justify-center gap-2 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition">
+            <button onClick={() => alert("Connecting to SurePay support...")} className="py-3 flex items-center justify-center gap-2 border border-gray-300 rounded-lg text-gray-700 font-medium hover:bg-gray-50 transition active:scale-95">
               Help
             </button>
           </div>

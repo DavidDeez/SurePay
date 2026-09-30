@@ -26,15 +26,15 @@ const Dashboard = () => {
             <Send className="h-6 w-6" />
             <span className="text-sm">Send Money</span>
           </Link>
-          <button className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition">
+          <button onClick={() => alert("Request Money feature coming soon.")} className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition active:scale-95">
             <ArrowDownLeft className="h-6 w-6" />
             <span className="text-sm">Request</span>
           </button>
-          <button className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition">
+          <button onClick={() => alert("Pay Bills feature coming soon.")} className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition active:scale-95">
             <FileText className="h-6 w-6" />
             <span className="text-sm">Pay Bills</span>
           </button>
-          <button className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition">
+          <button onClick={() => alert("Airtime feature coming soon.")} className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition active:scale-95">
             <Smartphone className="h-6 w-6" />
             <span className="text-sm">Airtime</span>
           </button>

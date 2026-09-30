@@ -49,7 +49,7 @@ const AdminDashboard = () => {
                               <div className="text-xs text-gray-400 mt-1">Txn: SP-{Math.floor(800000 + Math.random()*100000)} • ₦250,000</div>
                            </div>
                         </div>
-                        <button className="px-4 py-2 text-sm font-medium text-ecobank-600 bg-ecobank-50 rounded-lg">
+                        <button onClick={() => alert("Risk Intervention Review panel opened.")} className="px-4 py-2 text-sm font-medium text-ecobank-600 bg-ecobank-50 rounded-lg active:scale-95 transition">
                            Review
                         </button>
                      </div>
@@ -75,14 +75,14 @@ const AdminDashboard = () => {
                         <td className="px-4 py-4">₦45,000</td>
                         <td className="px-4 py-4">Bank X</td>
                         <td className="px-4 py-4"><span className="text-warning font-medium">Processing Reversal</span></td>
-                        <td className="px-4 py-4"><button className="text-ecobank-600 font-medium">View</button></td>
+                        <td className="px-4 py-4"><button onClick={() => alert("Reversal details opened.")} className="text-ecobank-600 font-medium hover:underline">View</button></td>
                      </tr>
                      <tr className="border-b border-gray-50">
                         <td className="px-4 py-4 font-medium">SP-182394</td>
                         <td className="px-4 py-4">₦12,500</td>
                         <td className="px-4 py-4">UBA</td>
                         <td className="px-4 py-4"><span className="text-success font-medium">Reversed</span></td>
-                        <td className="px-4 py-4"><button className="text-ecobank-600 font-medium">View</button></td>
+                        <td className="px-4 py-4"><button onClick={() => alert("Reversal details opened.")} className="text-ecobank-600 font-medium hover:underline">View</button></td>
                      </tr>
                   </tbody>
                </table>
@@ -101,7 +101,7 @@ const AdminDashboard = () => {
                   <div className="flex justify-between"><span>Detected:</span> <span className="font-semibold">10:42 AM</span></div>
                   <div className="flex justify-between"><span>Impact:</span> <span className="font-semibold">~150 txns/hr</span></div>
                </div>
-               <button className="w-full mt-6 py-2 bg-danger text-white rounded-lg font-medium text-sm">
+               <button onClick={() => alert("Incident report opened.")} className="w-full mt-6 py-2 bg-danger text-white rounded-lg font-medium text-sm active:scale-95 transition">
                   View Incident Report
                </button>
             </div>
@@ -109,13 +109,13 @@ const AdminDashboard = () => {
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                <h3 className="text-lg font-bold text-gray-900 mb-4">System Actions</h3>
                <div className="space-y-3">
-                  <button className="w-full text-left px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition text-sm font-medium">
+                  <button onClick={() => alert("Manual reconciliation triggered.")} className="w-full text-left px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition text-sm font-medium active:scale-[0.98]">
                      Trigger Manual Reconciliation
                   </button>
-                  <button className="w-full text-left px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition text-sm font-medium">
+                  <button onClick={() => alert("Routing rules updated.")} className="w-full text-left px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition text-sm font-medium active:scale-[0.98]">
                      Update Routing Rules
                   </button>
-                  <button className="w-full text-left px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition text-sm font-medium">
+                  <button onClick={() => alert("Network warning broadcasted.")} className="w-full text-left px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition text-sm font-medium active:scale-[0.98]">
                      Broadcast Network Warning
                   </button>
                </div>

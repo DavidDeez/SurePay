@@ -69,13 +69,13 @@ const Receipt = () => {
           )}
 
           <div className="pt-4 flex items-center justify-center gap-4">
-             <button className="flex flex-col items-center gap-2 text-gray-500 hover:text-ecobank-600 transition">
+             <button onClick={() => alert("Downloading PDF receipt...")} className="flex flex-col items-center gap-2 text-gray-500 hover:text-ecobank-600 transition active:scale-95">
                 <div className="h-12 w-12 rounded-full bg-gray-50 flex items-center justify-center">
                    <Download className="h-5 w-5" />
                 </div>
                 <span className="text-xs font-medium">Download</span>
              </button>
-             <button className="flex flex-col items-center gap-2 text-gray-500 hover:text-ecobank-600 transition">
+             <button onClick={() => alert("Opening share dialog...")} className="flex flex-col items-center gap-2 text-gray-500 hover:text-ecobank-600 transition active:scale-95">
                 <div className="h-12 w-12 rounded-full bg-gray-50 flex items-center justify-center">
                    <Share2 className="h-5 w-5" />
                 </div>
