@@ -26,7 +26,7 @@ const Login = () => {
             Enter Guest Mode
           </button>
           <p className="text-xs text-gray-400 px-4">
-            This is an Ecobank innovation prototype. No real credentials required.
+            This is a hackathon prototype environment. No real banking credentials are required.
           </p>
         </div>
       </div>

@@ -21,7 +21,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Shield className="h-8 w-8 text-ecobank-500" />
             SurePay
           </div>
-          <p className="text-xs text-gray-500 mt-1">Ecobank Innovation Concept</p>
+          <p className="text-xs text-gray-500 mt-1">Ecobank Hackathon Prototype</p>
         </div>
         <nav className="mt-6 px-4 space-y-1">
           {navItems.map((item) => {
