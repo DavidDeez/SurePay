@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div className="max-w-5xl mx-auto space-y-8 relative">
       {/* Balance Section */}
-      <div className="bg-gradient-to-r from-ecobank-900 to-ecobank-600 rounded-2xl p-6 md:p-8 text-white shadow-lg">
+      <div className="bg-gradient-to-r from-ecobank-900 to-ecobank-600 rounded-3xl p-5 md:p-8 text-white shadow-xl max-w-2xl mx-auto">
         <div className="flex justify-between items-start">
            <div>
              <h2 className="text-ecobank-100 text-lg font-medium">Good morning, David</h2>
@@ -21,22 +21,22 @@ const Dashboard = () => {
            </button>
         </div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-5 md:mt-8">
-          <Link to="/transfer" className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition">
-            <Send className="h-6 w-6" />
-            <span className="text-sm">Send Money</span>
+        <div className="grid grid-cols-4 gap-2 md:gap-4 mt-6">
+          <Link to="/transfer" className="flex flex-col items-center gap-1.5 bg-white/10 rounded-xl p-2 md:p-3 hover:bg-white/20 transition active:scale-95">
+            <Send className="h-5 w-5 md:h-6 md:w-6" />
+            <span className="text-[10px] md:text-sm font-medium">Send</span>
           </Link>
-          <button onClick={() => alert("Request Money feature coming soon.")} className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition active:scale-95">
-            <ArrowDownLeft className="h-6 w-6" />
-            <span className="text-sm">Request</span>
+          <button onClick={() => alert("Request Money feature coming soon.")} className="flex flex-col items-center gap-1.5 bg-white/10 rounded-xl p-2 md:p-3 hover:bg-white/20 transition active:scale-95">
+            <ArrowDownLeft className="h-5 w-5 md:h-6 md:w-6" />
+            <span className="text-[10px] md:text-sm font-medium">Request</span>
           </button>
-          <button onClick={() => alert("Pay Bills feature coming soon.")} className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition active:scale-95">
-            <FileText className="h-6 w-6" />
-            <span className="text-sm">Pay Bills</span>
+          <button onClick={() => alert("Pay Bills feature coming soon.")} className="flex flex-col items-center gap-1.5 bg-white/10 rounded-xl p-2 md:p-3 hover:bg-white/20 transition active:scale-95">
+            <FileText className="h-5 w-5 md:h-6 md:w-6" />
+            <span className="text-[10px] md:text-sm font-medium">Bills</span>
           </button>
-          <button onClick={() => alert("Airtime feature coming soon.")} className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition active:scale-95">
-            <Smartphone className="h-6 w-6" />
-            <span className="text-sm">Airtime</span>
+          <button onClick={() => alert("Airtime feature coming soon.")} className="flex flex-col items-center gap-1.5 bg-white/10 rounded-xl p-2 md:p-3 hover:bg-white/20 transition active:scale-95">
+            <Smartphone className="h-5 w-5 md:h-6 md:w-6" />
+            <span className="text-[10px] md:text-sm font-medium">Airtime</span>
           </button>
         </div>
       </div>
@@ -142,7 +142,7 @@ const Dashboard = () => {
                         <div className="w-full">
                            <input type="text" readOnly value="*123#" className="w-full bg-transparent text-center text-white text-3xl font-mono outline-none mb-12" />
                            <button onClick={() => setUssdStep(1)} className="w-16 h-16 rounded-full bg-green-500 mx-auto flex items-center justify-center text-white font-bold hover:bg-green-600">
-                              <Smartphone className="h-6 w-6" />
+                              <Smartphone className="h-5 w-5 md:h-6 md:w-6" />
                            </button>
                         </div>
                      </div>
