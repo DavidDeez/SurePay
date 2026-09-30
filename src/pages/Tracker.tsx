@@ -68,7 +68,7 @@ const Tracker = () => {
 
   return (
     <div className="max-w-2xl mx-auto space-y-6">
-      <button onClick={() => navigate('/')} className="flex items-center gap-2 text-gray-500 hover:text-gray-900 transition mb-4">
+      <button onClick={() => navigate('/dashboard')} className="flex items-center gap-2 text-gray-500 hover:text-gray-900 transition mb-4">
         <ArrowLeft className="h-5 w-5" />
         Back to Dashboard
       </button>

@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Dashboard', path: '/', icon: LayoutDashboard },
+    { name: 'Dashboard', path: '/dashboard', icon: LayoutDashboard },
     { name: 'Transfer', path: '/transfer', icon: Send },
     { name: 'Analytics', path: '/analytics', icon: BarChart2 },
     { name: 'Admin', path: '/admin', icon: Settings },
@@ -48,7 +48,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       {/* Main Content */}
       <main className="flex-1 overflow-auto">
         <header className="bg-white border-b border-gray-200 h-16 flex items-center px-4 md:px-8 justify-between sticky top-0 z-10">
-          <h1 className="text-xl font-semibold text-gray-800">
+          <div className="md:hidden flex items-center gap-2 font-bold text-lg text-ecobank-900 mr-3">
+            <Shield className="h-6 w-6 text-ecobank-500" />
+          </div>
+          <h1 className="text-xl font-semibold text-gray-800 flex-1">
             {navItems.find(i => i.path === location.pathname)?.name || 'SurePay'}
           </h1>
           <div className="flex items-center gap-4">
