@@ -26,7 +26,7 @@ const Receipt = () => {
         Back
       </button>
 
-      <div className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden relative">
+      <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-2xl shadow-blue-900/10 border border-white/80 overflow-hidden relative">
         {/* Verification banner */}
         <div className={`py-3 px-6 ${isFailed ? 'bg-danger' : 'bg-success'} text-white flex items-center justify-center gap-2 font-medium`}>
           <ShieldCheck className="h-5 w-5" />

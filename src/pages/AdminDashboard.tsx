@@ -10,23 +10,23 @@ const AdminDashboard = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
-        <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 col-span-2 md:col-span-1">
+        <div className="bg-white/60 backdrop-blur-xl p-5 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80 col-span-2 md:col-span-1">
           <div className="text-gray-500 text-sm font-medium mb-1">Total Txns Today</div>
           <div className="text-2xl font-bold text-gray-900">128,492</div>
         </div>
-        <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 col-span-2 md:col-span-1">
+        <div className="bg-white/60 backdrop-blur-xl p-5 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80 col-span-2 md:col-span-1">
           <div className="text-gray-500 text-sm font-medium mb-1">Successful</div>
           <div className="text-2xl font-bold text-success">124,713</div>
         </div>
-        <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 col-span-2 md:col-span-1">
+        <div className="bg-white/60 backdrop-blur-xl p-5 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80 col-span-2 md:col-span-1">
           <div className="text-gray-500 text-sm font-medium mb-1">Failed</div>
           <div className="text-2xl font-bold text-danger">2,891</div>
         </div>
-        <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 col-span-2 md:col-span-1">
+        <div className="bg-white/60 backdrop-blur-xl p-5 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80 col-span-2 md:col-span-1">
           <div className="text-gray-500 text-sm font-medium mb-1">Pending</div>
           <div className="text-2xl font-bold text-warning">888</div>
         </div>
-        <div className="bg-white p-5 rounded-2xl shadow-sm border border-gray-100 col-span-2 md:col-span-1">
+        <div className="bg-white/60 backdrop-blur-xl p-5 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80 col-span-2 md:col-span-1">
           <div className="text-gray-500 text-sm font-medium mb-1">Reversals</div>
           <div className="text-2xl font-bold text-gray-900">1,204</div>
         </div>
@@ -34,7 +34,7 @@ const AdminDashboard = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
          <div className="lg:col-span-2 space-y-6">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
                <h3 className="text-lg font-bold text-gray-900 mb-6">Active Risk Interventions</h3>
                <div className="space-y-4">
                   {[1, 2, 3].map((i) => (
@@ -57,7 +57,7 @@ const AdminDashboard = () => {
                </div>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
                <h3 className="text-lg font-bold text-gray-900 mb-6">Automated Reversals Queue</h3>
                <table className="w-full text-sm text-left">
                   <thead className="text-xs text-gray-500 uppercase bg-gray-50">
@@ -106,7 +106,7 @@ const AdminDashboard = () => {
                </button>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+            <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
                <h3 className="text-lg font-bold text-gray-900 mb-4">System Actions</h3>
                <div className="space-y-3">
                   <button className="w-full text-left px-4 py-3 border border-gray-200 rounded-xl hover:bg-gray-50 transition text-sm font-medium">

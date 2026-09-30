@@ -36,7 +36,7 @@ const Transfer = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+    <div className="max-w-2xl mx-auto bg-white/60 backdrop-blur-xl rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80 p-8">
       <h2 className="text-2xl font-bold text-gray-900 mb-6">Send Money</h2>
 
       {step === 1 && (

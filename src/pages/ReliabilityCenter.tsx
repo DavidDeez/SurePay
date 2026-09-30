@@ -1,6 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, BarChart, Bar, Cell } from 'recharts';
-import { Activity, Clock, RefreshCw, XCircle } from 'lucide-react';
+import { Activity, Clock, RefreshCw, XCircle, CheckCircle2 } from 'lucide-react';
 
 const mockDailyData = [
   { time: '06:00', success: 98, latency: 4 },
@@ -34,22 +34,22 @@ const ReliabilityCenter = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
           <div className="text-gray-500 text-sm font-medium mb-1">Payment Success Rate</div>
           <div className="text-3xl font-bold text-gray-900">97.4%</div>
           <div className="text-success text-sm mt-2 flex items-center gap-1">↑ 0.2% vs yesterday</div>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
           <div className="text-gray-500 text-sm font-medium mb-1">Avg Processing Time</div>
           <div className="text-3xl font-bold text-gray-900">11.2s</div>
           <div className="text-warning text-sm mt-2 flex items-center gap-1">↑ 1.5s vs yesterday</div>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
           <div className="text-gray-500 text-sm font-medium mb-1">Failed Transactions</div>
           <div className="text-3xl font-bold text-gray-900">2.1%</div>
           <div className="text-success text-sm mt-2 flex items-center gap-1">↓ 0.1% vs yesterday</div>
         </div>
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
           <div className="text-gray-500 text-sm font-medium mb-1">Reversal Rate</div>
           <div className="text-3xl font-bold text-gray-900">0.5%</div>
           <div className="text-gray-400 text-sm mt-2 flex items-center gap-1">— No change</div>
@@ -57,7 +57,7 @@ const ReliabilityCenter = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
            <h3 className="text-lg font-bold text-gray-900 mb-6">Network Success Rate (24h)</h3>
            <div className="h-72">
              <ResponsiveContainer width="100%" height="100%">
@@ -72,7 +72,7 @@ const ReliabilityCenter = () => {
            </div>
         </div>
 
-        <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+        <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
            <h3 className="text-lg font-bold text-gray-900 mb-6">Bank Reliability Comparison</h3>
            <div className="h-72">
              <ResponsiveContainer width="100%" height="100%">
@@ -95,7 +95,7 @@ const ReliabilityCenter = () => {
       </div>
       
       {/* Recent incidents */}
-      <div className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+      <div className="bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80">
          <h3 className="text-lg font-bold text-gray-900 mb-6">Recent Incidents</h3>
          <div className="space-y-4">
             <div className="flex items-start gap-4 p-4 rounded-xl border border-orange-100 bg-orange-50">
