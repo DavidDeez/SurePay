@@ -98,12 +98,12 @@ const ReliabilityCenter = () => {
       <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
          <h3 className="text-lg font-bold text-gray-900 mb-6">Recent Incidents</h3>
          <div className="space-y-4">
-            <div className="flex items-start gap-4 p-4 rounded-xl border border-orange-100 bg-orange-50">
-               <Activity className="h-6 w-6 text-orange-500 mt-0.5" />
+            <div className="flex items-start gap-4 p-4 rounded-xl border border-gray-200 bg-gray-50">
+               <Activity className="h-6 w-6 text-black mt-0.5" />
                <div>
-                  <h4 className="font-bold text-orange-900">Elevated processing delays at Bank X</h4>
-                  <p className="text-sm text-orange-800 mt-1">AI detected abnormal latency patterns (avg 2m 14s). Predictions updated to re-route or warn users.</p>
-                  <div className="text-xs text-orange-600 mt-2 font-medium">Ongoing • Detected 42 mins ago</div>
+                  <h4 className="font-bold text-black">Elevated processing delays at Bank X</h4>
+                  <p className="text-sm text-gray-700 mt-1">AI detected abnormal latency patterns (avg 2m 14s). Predictions updated to re-route or warn users.</p>
+                  <div className="text-xs text-gray-500 mt-2 font-medium">Ongoing • Detected 42 mins ago</div>
                </div>
             </div>
             <div className="flex items-start gap-4 p-4 rounded-xl border border-gray-200">

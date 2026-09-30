@@ -40,8 +40,8 @@ const AdminDashboard = () => {
                   {[1, 2, 3].map((i) => (
                      <div key={i} className="flex items-center justify-between p-4 rounded-xl border border-gray-100 hover:bg-gray-50 transition">
                         <div className="flex items-start gap-4">
-                           <div className="h-10 w-10 rounded-full bg-orange-100 flex items-center justify-center shrink-0">
-                              <ShieldAlert className="h-5 w-5 text-orange-600" />
+                           <div className="h-10 w-10 rounded-full bg-gray-200 flex items-center justify-center shrink-0">
+                              <ShieldAlert className="h-5 w-5 text-black" />
                            </div>
                            <div>
                               <h4 className="font-bold text-gray-900">Scam Pause Triggered</h4>
@@ -90,13 +90,13 @@ const AdminDashboard = () => {
          </div>
 
          <div className="space-y-6">
-            <div className="bg-danger/10 p-6 rounded-2xl border border-danger/20">
+            <div className="bg-gray-100 p-6 rounded-2xl border border-gray-300">
                <div className="flex items-center gap-2 mb-2">
                   <AlertTriangle className="h-5 w-5 text-danger" />
                   <h3 className="font-bold text-danger">Incident Detected</h3>
                </div>
-               <p className="text-sm text-red-900/80 mb-4">Elevated transaction failures detected on interbank channels to Bank X.</p>
-               <div className="space-y-2 text-sm text-red-900/80">
+               <p className="text-sm text-gray-700 mb-4">Elevated transaction failures detected on interbank channels to Bank X.</p>
+               <div className="space-y-2 text-sm text-gray-700">
                   <div className="flex justify-between"><span>Severity:</span> <span className="font-semibold">Medium</span></div>
                   <div className="flex justify-between"><span>Detected:</span> <span className="font-semibold">10:42 AM</span></div>
                   <div className="flex justify-between"><span>Impact:</span> <span className="font-semibold">~150 txns/hr</span></div>

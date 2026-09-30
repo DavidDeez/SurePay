@@ -9,10 +9,10 @@ const Dashboard = () => {
   return (
     <div className="max-w-5xl mx-auto space-y-8 relative">
       {/* Balance Section */}
-      <div className="bg-gradient-to-r from-ecobank-900 to-ecobank-600 rounded-2xl p-8 text-white shadow-lg">
+      <div className="bg-black rounded-2xl p-8 text-white shadow-lg">
         <div className="flex justify-between items-start">
            <div>
-             <h2 className="text-ecobank-100 text-lg font-medium">Good morning, David</h2>
+             <h2 className="text-gray-300 text-lg font-medium">Good morning, David</h2>
              <div className="mt-2 text-4xl font-bold">₦284,500.00</div>
            </div>
            <button onClick={() => { setUssdOpen(true); setUssdStep(0); }} className="flex items-center gap-2 bg-white/20 hover:bg-white/30 transition px-4 py-2 rounded-lg text-sm font-medium">
@@ -21,7 +21,7 @@ const Dashboard = () => {
            </button>
         </div>
         
-        <div className="grid grid-cols-4 gap-4 mt-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
           <Link to="/transfer" className="flex flex-col items-center gap-2 bg-white/10 rounded-xl p-3 hover:bg-white/20 transition">
             <Send className="h-6 w-6" />
             <span className="text-sm">Send Money</span>
