@@ -89,8 +89,8 @@ const Transfer = () => {
 
       {step === 2 && (
         <div className="space-y-6 text-center py-4">
-          <div className="w-16 h-16 bg-gray-200 rounded-full flex items-center justify-center mx-auto mb-4">
-            <AlertTriangle className="h-8 w-8 text-black" />
+          <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <AlertTriangle className="h-8 w-8 text-orange-500" />
           </div>
           <h3 className="text-xl font-bold text-gray-900">Before you send ₦{Number(amount).toLocaleString()}</h3>
           <p className="text-gray-600">This is a new beneficiary and a large amount.</p>
@@ -132,10 +132,10 @@ const Transfer = () => {
             <p className="text-gray-500">Destination: {bank} • Amount: ₦{Number(amount).toLocaleString()}</p>
           </div>
 
-          <div className={`p-6 rounded-2xl ${prediction.network_status === 'HEALTHY' ? 'bg-ecobank-50 border border-ecobank-100' : 'bg-gray-50 border border-gray-300'}`}>
+          <div className={`p-6 rounded-2xl ${prediction.network_status === 'HEALTHY' ? 'bg-ecobank-50 border border-ecobank-100' : 'bg-orange-50 border border-orange-100'}`}>
             <div className="flex items-center justify-between mb-4">
               <span className="text-gray-600 font-medium">SUCCESS PROBABILITY</span>
-              <span className={`text-3xl font-bold ${prediction.network_status === 'HEALTHY' ? 'text-ecobank-600' : 'text-black'}`}>
+              <span className={`text-3xl font-bold ${prediction.network_status === 'HEALTHY' ? 'text-ecobank-600' : 'text-orange-600'}`}>
                 {Math.round(prediction.success_probability * 100)}%
               </span>
             </div>

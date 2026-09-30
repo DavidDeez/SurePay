@@ -143,11 +143,11 @@ const Tracker = () => {
           </div>
           
           {isFailed && (
-             <div className="mt-8 bg-gray-50 border border-gray-300 rounded-xl p-4 flex gap-4">
-                <AlertCircle className="h-6 w-6 text-black shrink-0" />
+             <div className="mt-8 bg-orange-50 border border-orange-200 rounded-xl p-4 flex gap-4">
+                <AlertCircle className="h-6 w-6 text-orange-500 shrink-0" />
                 <div>
-                   <h4 className="font-bold text-black">Your transfer could not be completed</h4>
-                   <p className="text-sm text-gray-700 mt-1">
+                   <h4 className="font-bold text-orange-900">Your transfer could not be completed</h4>
+                   <p className="text-sm text-orange-800 mt-1">
                       {isReversed ? 'The funds have been successfully returned to your account.' : 'A reversal has been initiated. You will receive your funds within the applicable resolution window.'}
                    </p>
                 </div>

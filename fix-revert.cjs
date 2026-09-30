@@ -1,4 +1,9 @@
-import React from 'react';
+const fs = require('fs');
+const path = require('path');
+
+// 1. Layout.tsx - Add back bottom nav, but with ecobank colors
+const layoutPath = path.join(__dirname, 'src', 'components', 'Layout.tsx');
+const layoutContent = `import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Send, BarChart2, Settings, Shield } from 'lucide-react';
 
@@ -31,11 +36,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                className={\`flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors \${
                   isActive
                     ? 'bg-ecobank-50 text-ecobank-600'
                     : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
-                }`}
+                }\`}
               >
                 <Icon className="h-5 w-5" />
                 {item.name}
@@ -72,11 +77,11 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             <Link
               key={item.path}
               to={item.path}
-              className={`flex flex-col items-center justify-center w-full h-full space-y-1 ${
+              className={\`flex flex-col items-center justify-center w-full h-full space-y-1 \${
                 isActive ? 'text-ecobank-600' : 'text-gray-400'
-              }`}
+              }\`}
             >
-              <Icon className={`h-5 w-5 ${isActive ? 'text-ecobank-600 fill-ecobank-100' : ''}`} />
+              <Icon className={\`h-5 w-5 \${isActive ? 'text-ecobank-600 fill-ecobank-100' : ''}\`} />
               <span className="text-[10px] font-medium">{item.name}</span>
             </Link>
           );
@@ -86,4 +91,25 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   );
 };
 
-export default Layout;
+export default Layout;`;
+fs.writeFileSync(layoutPath, layoutContent, 'utf8');
+
+// 2. Dashboard.tsx - Re-add responsive grid
+const dashboardPath = path.join(__dirname, 'src', 'pages', 'Dashboard.tsx');
+let dashboardContent = fs.readFileSync(dashboardPath, 'utf8');
+dashboardContent = dashboardContent.replace(/grid grid-cols-4 gap-4/g, 'grid grid-cols-2 md:grid-cols-4 gap-4');
+fs.writeFileSync(dashboardPath, dashboardContent, 'utf8');
+
+// 3. index.html - Change Inter to Comfortaa
+const indexPath = path.join(__dirname, 'index.html');
+let indexContent = fs.readFileSync(indexPath, 'utf8');
+indexContent = indexContent.replace(/family=Inter:wght@300;400;500;600;700/g, 'family=Comfortaa:wght@300;400;500;600;700');
+fs.writeFileSync(indexPath, indexContent, 'utf8');
+
+// 4. index.css - Change font-family to Comfortaa
+const cssPath = path.join(__dirname, 'src', 'index.css');
+let cssContent = fs.readFileSync(cssPath, 'utf8');
+cssContent = cssContent.replace(/font-family: 'Inter'/g, "font-family: 'Comfortaa'");
+fs.writeFileSync(cssPath, cssContent, 'utf8');
+
+console.log('Restored layout responsiveness and applied Comfortaa font');
