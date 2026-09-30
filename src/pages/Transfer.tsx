@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { predictTransferHealth, PredictionResult } from '../ml/engine';
+import { predictTransferHealth } from '../ml/engine';
+import type { PredictionResult } from '../ml/engine';
 import { AlertTriangle, ShieldCheck, ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const Transfer = () => {
