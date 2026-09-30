@@ -73,7 +73,7 @@ const Tracker = () => {
         Back to Dashboard
       </button>
       
-      <div className="bg-white/60 backdrop-blur-xl rounded-2xl shadow-2xl shadow-blue-900/5 border border-white/80 overflow-hidden">
+      <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
         <div className={`p-8 text-center ${isFailed ? (isReversed ? 'bg-orange-600' : 'bg-danger') : currentStep === 4 ? 'bg-success' : 'bg-ecobank-600'} text-white transition-colors duration-500`}>
           <div className="text-sm opacity-80 mb-2">TRANSFER #{id}</div>
           <div className="text-4xl font-bold mb-2">₦{Number(amount.replace(/,/g,'')).toLocaleString()}</div>
@@ -101,7 +101,7 @@ const Tracker = () => {
               <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-success text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                 <CheckCircle2 className="w-5 h-5" />
               </div>
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white/80 backdrop-blur-md p-4 rounded-xl border border-white shadow-lg shadow-slate-200/50">
+              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
                 <div className="flex items-center justify-between mb-1">
                   <div className="font-bold text-gray-900">Transfer initiated</div>
                 </div>

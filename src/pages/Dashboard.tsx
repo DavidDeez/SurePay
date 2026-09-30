@@ -43,7 +43,7 @@ const Dashboard = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Network Health */}
-        <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-6 shadow-2xl shadow-blue-900/5 border border-white/80">
+        <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Payment Network Health</h3>
           <div className="space-y-4">
             <div className="flex items-center justify-between">
@@ -81,7 +81,7 @@ const Dashboard = () => {
         </div>
 
         {/* Recent Transactions */}
-        <div className="bg-white/60 backdrop-blur-xl rounded-2xl p-6 shadow-2xl shadow-blue-900/5 border border-white/80">
+        <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Transactions</h3>
           <div className="space-y-4">
             <div className="flex items-center justify-between">

@@ -13,17 +13,7 @@
 
 @layer base {
   body {
-    font-family: 'Inter', sans-serif;
-    @apply text-gray-900 bg-slate-50 min-h-screen relative;
-  }
-  
-  body::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background: radial-gradient(circle at top right, #e3f0f9 0%, transparent 40%),
-                radial-gradient(circle at bottom left, #f2f8fc 0%, transparent 40%);
-    background-attachment: fixed;
+    font-family: 'Inter', -apple-system, sans-serif;
+    @apply text-gray-900 bg-[#F9FAFB] min-h-screen antialiased;
   }
 }

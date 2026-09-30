@@ -13,8 +13,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   ];
 
   return (
-    <div className="flex h-screen bg-transparent">
-      <aside className="w-64 bg-white/70 backdrop-blur-2xl border-r border-white/50 shadow-[4px_0_24px_rgba(0,0,0,0.02)] z-10">
+    <div className="flex h-screen bg-[#F9FAFB]">
+      <aside className="w-64 bg-white border-r border-gray-200 z-10">
         <div className="p-6">
           <div className="flex items-center gap-2 font-bold text-2xl text-ecobank-900">
             <Shield className="h-8 w-8 text-ecobank-500" />
@@ -44,7 +44,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         </nav>
       </aside>
       <main className="flex-1 overflow-auto">
-        <header className="bg-white/70 backdrop-blur-2xl border-b border-white/50 shadow-[0_4px_24px_rgba(0,0,0,0.02)] h-16 flex items-center px-8 justify-between sticky top-0 z-10">
+        <header className="bg-white border-b border-gray-200 h-16 flex items-center px-8 justify-between sticky top-0 z-10">
           <h1 className="text-xl font-semibold text-gray-800">
             {navItems.find(i => i.path === location.pathname)?.name || 'SurePay'}
           </h1>
